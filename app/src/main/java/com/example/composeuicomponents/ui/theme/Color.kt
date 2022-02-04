@@ -2,7 +2,9 @@ package com.example.composeuicomponents.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple200 = Color(0xFFBB86FC)
-val Purple500 = Color(0xFF6200EE)
-val Purple700 = Color(0xFF3700B3)
-val Teal200 = Color(0xFF03DAC5)
+val Green = Color(0xff19BE72)
+val GreenDark = Color(0xff128E55)
+val BlackBackground = Color(0xff292722)
+val BlackText = Color(0xff1D1B17)
+val GrayBorderColor = Color(0xffE4E3EC)
+val White = Color(0xffffffff)
