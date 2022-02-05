@@ -7,6 +7,7 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
+import com.example.composeuicomponents.ui.theme.colorPalettes.BLUE_700
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
@@ -40,7 +41,7 @@ private val DarkColorPalette = darkColors(
 //)
 
 private val LightColorPalette = lightColors(
-    primary = Color(0xFF6200EE),
+    primary = BLUE_700,
     primaryVariant = Color(0xFF3700B3),
     secondary = Color(0xFF03DAC6),
     secondaryVariant = Color(0xFF018786),

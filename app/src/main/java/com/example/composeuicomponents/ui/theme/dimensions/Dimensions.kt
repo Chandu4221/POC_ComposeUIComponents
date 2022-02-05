@@ -4,7 +4,6 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
 private const val DIMEN_0 = 0 * 16                // 0
-private const val DIMEN_1 = 1                     // 1dp
 private const val DIMEN_2 = 0.125 * 16            // 0.5
 private const val DIMEN_4 = 0.25 * 16             // 1
 private const val DIMEN_6 = 0.375 * 16            // 1.5
@@ -39,6 +38,7 @@ private const val DIMEN_288 = 18 * 16             // 72
 private const val DIMEN_320 = 20 * 16             // 80
 private const val DIMEN_384 = 24 * 16             // 96
 
+const val DIMEN_1 = 1                             // 1dp
 const val DIMEN_30 = 1.875 * 16                   // used for text font size
 const val DIMEN_60 = 3.75 * 16                   // used for text font size
 const val DIMEN_72 = 4.5 * 16                   // used for text font size
