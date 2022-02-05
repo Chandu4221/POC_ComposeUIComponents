@@ -2,6 +2,7 @@ package com.example.composeuicomponents.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+// RIDEPLUS COLOR PALETTE
 val PARTNER_PRIMARY_50 = Color(0xff9DF2CB)
 val PARTNER_PRIMARY_100 = Color(0xff8BF0C1)
 val PARTNER_PRIMARY_200 = Color(0xff66EBAE)

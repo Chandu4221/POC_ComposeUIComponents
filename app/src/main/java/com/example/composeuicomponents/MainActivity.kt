@@ -40,27 +40,27 @@ class MainActivity : ComponentActivity() {
     private fun Buttons() {
         Column() {
             ButtonDefault(onClick = { /*TODO*/ }) {
-                Text(text = "Default Button".uppercase())
+                Text(text = "Default Button", style = MaterialTheme.typography.button)
             }
             Spacer(modifier = Modifier.height(5.dp))
             ButtonOutline(onClick = { /*TODO*/ }) {
-                Text(text = "Outline Button".uppercase())
+                Text(text = "Outline Button", style = MaterialTheme.typography.button)
             }
             Spacer(modifier = Modifier.height(5.dp))
             ButtonXS(onClick = { /*TODO*/ }) {
-                Text(text = "Extra Small Button".uppercase())
+                Text(text = "Extra Small Button", style = MaterialTheme.typography.button)
             }
             Spacer(modifier = Modifier.height(5.dp))
             ButtonSM(onClick = { /*TODO*/ }) {
-                Text(text = "Small Button".uppercase())
+                Text(text = "Small Button", style = MaterialTheme.typography.button)
             }
             Spacer(modifier = Modifier.height(5.dp))
             ButtonLG(onClick = { /*TODO*/ }) {
-                Text(text = "Large Button".uppercase())
+                Text(text = "Large Button", style = MaterialTheme.typography.button)
             }
             Spacer(modifier = Modifier.height(5.dp))
             ButtonXL(onClick = { /*TODO*/ }) {
-                Text(text = "Extra Large Button".uppercase())
+                Text(text = "Extra Large Button", style = MaterialTheme.typography.button)
             }
         }
     }
