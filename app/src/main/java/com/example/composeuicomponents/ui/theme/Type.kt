@@ -25,80 +25,75 @@ val defaultTypography: Typography = Typography()
 val Typography = Typography(
     h1 = defaultTypography.h1.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Light,
-        fontSize = 96.sp,
-        letterSpacing = -(1.5).sp
+        fontSize = 79.sp,
     ),
     h2 = defaultTypography.h2.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Light,
-        fontSize = 60.sp,
-        letterSpacing = -(0.5).sp
+        fontSize = 50.sp,
     ),
     h3 = defaultTypography.h3.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 48.sp,
-        letterSpacing = 0.sp
+        fontSize = 40.sp,
     ),
     h4 = defaultTypography.h4.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 34.sp,
-        letterSpacing = 0.25.sp,
+        fontSize = 28.sp,
     ),
     h5 = defaultTypography.h5.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 24.sp,
-        letterSpacing = 0.sp,
+        fontSize = 20.sp,
     ),
     h6 = defaultTypography.h6.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Medium,
-        fontSize = 20.sp,
-        letterSpacing = 0.15.sp
+        fontSize = 17.sp,
     ),
     subtitle1 = defaultTypography.subtitle1.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        letterSpacing = 0.15.sp
+        fontSize = 13.sp,
     ),
     subtitle2 = defaultTypography.subtitle2.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
-        letterSpacing = 0.1.sp,
+        fontSize = 12.sp,
     ),
     body1 = defaultTypography.body1.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp,
-        letterSpacing = 0.5.sp
+        fontSize = 13.sp,
     ),
     body2 = defaultTypography.body2.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp,
-        letterSpacing = 0.25.sp,
+        fontSize = 12.sp,
     ),
     button = defaultTypography.button.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
-        letterSpacing = 1.25.sp,
+        fontSize = 12.sp,
     ),
     caption = defaultTypography.caption.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp,
-        letterSpacing = 0.4.sp,
+        fontSize = 10.sp,
     ),
     overline = defaultTypography.overline.copy(
         fontFamily = fonts,
-        fontWeight = FontWeight.Normal,
-        fontSize = 10.sp,
-        letterSpacing = 1.5.sp,
+        fontSize = 8.sp,
     ),
 )
+
+//
+//val Typography = Typography(
+//    h1 = defaultTypography.h1.copy(
+//        fontFamily = fonts,
+//        fontSize = 79.sp,
+//        fontWeight = FontWeight.Light
+//    ),
+//    h2 = TextStyle(fontFamily = fonts),
+//    h3 = TextStyle(fontFamily = fonts),
+//    h4 = TextStyle(fontFamily = fonts),
+//    h5 = TextStyle(fontFamily = fonts),
+//    h6 = TextStyle(fontFamily = fonts),
+//    subtitle1 = TextStyle(fontFamily = fonts),
+//    subtitle2 = TextStyle(fontFamily = fonts),
+//    body1 = TextStyle(fontFamily = fonts),
+//    body2 = TextStyle(fontFamily = fonts),
+//    button = TextStyle(fontFamily = fonts),
+//    caption = TextStyle(fontFamily = fonts),
+//    overline = TextStyle(fontFamily = fonts),
+//)

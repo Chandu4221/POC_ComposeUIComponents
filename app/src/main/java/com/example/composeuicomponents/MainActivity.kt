@@ -3,18 +3,23 @@ package com.example.composeuicomponents
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Button
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -59,52 +64,132 @@ class MainActivity : ComponentActivity() {
     private fun Buttons() {
         Column(modifier = Modifier.padding(DIMEN_ONE.dp)) {
             Spacer(modifier = Modifier.height(5.dp))
-            ButtonXS(
-                onClick = { /*TODO*/ },
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                Text(
-                    text = "Extra Small",
-                    fontSize = FONT_DIMEN_XS,
-                    lineHeight = LINE_HEIGHT_XS,
-                    fontWeight = FontWeight.Medium
-                )
+                ButtonXS(
+                    onClick = { /*TODO*/ },
+                ) {
+                    Text(
+                        text = "Extra Small",
+                        fontSize = FONT_DIMEN_XS,
+                        lineHeight = LINE_HEIGHT_XS,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+
+                ButtonXS(
+                    onClick = { /*TODO*/ },
+                ) {
+                    Text(
+                        text = "Extra Small",
+                        style = MaterialTheme.typography.button
+                    )
+                }
             }
             Spacer(modifier = Modifier.height(5.dp))
-            ButtonSM(onClick = { /*TODO*/ }) {
-                Text(
-                    text = "Small",
-                    fontSize = FONT_DIMEN_SM,
-                    lineHeight = LINE_HEIGHT_SM,
-                    fontWeight = FontWeight.Medium
-                )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                ButtonSM(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Small",
+                        fontSize = FONT_DIMEN_SM,
+                        lineHeight = LINE_HEIGHT_SM,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+                ButtonSM(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Small",
+                        style = MaterialTheme.typography.button
+                    )
+                }
             }
             Spacer(modifier = Modifier.height(5.dp))
-            ButtonDefault(onClick = { /*TODO*/ }) {
-                Text(
-                    text = "Base",
-                    fontSize = FONT_DIMEN_SM,
-                    lineHeight = LINE_HEIGHT_SM,
-                    fontWeight = FontWeight.Medium
-                )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                ButtonDefault(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Base",
+                        fontSize = FONT_DIMEN_SM,
+                        lineHeight = LINE_HEIGHT_SM,
+                        fontWeight = FontWeight.Medium,
+                    )
+                }
+                ButtonDefault(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Base",
+                        style = MaterialTheme.typography.button
+                    )
+                }
             }
             Spacer(modifier = Modifier.height(5.dp))
-            ButtonLG(onClick = { /*TODO*/ }) {
-                Text(
-                    text = "Large",
-                    fontSize = FONT_DIMEN_BASE,
-                    lineHeight = LINE_HEIGHT_BASE,
-                    fontWeight = FontWeight.Medium
-                )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                ButtonDefault(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Base 2",
+                        fontSize = FONT_DIMEN_SM,
+                        lineHeight = LINE_HEIGHT_SM,
+                        fontWeight = FontWeight.Medium,
+                    )
+                }
+                ButtonDefault(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Base 2",
+                        style = MaterialTheme.typography.button
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(5.dp))
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                ButtonLG(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Large",
+                        fontSize = FONT_DIMEN_BASE,
+                        lineHeight = LINE_HEIGHT_BASE,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+                ButtonLG(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Large",
+                        style = MaterialTheme.typography.button
+                    )
+                }
             }
             Spacer(modifier = Modifier.height(5.dp))
-            ButtonXL(onClick = { /*TODO*/ }) {
-                Text(
-                    text = "Extra Large",
-                    fontSize = FONT_DIMEN_BASE,
-                    lineHeight = LINE_HEIGHT_BASE,
-                    fontWeight = FontWeight.Medium
-                )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                ButtonXL(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Extra Large",
+                        fontSize = FONT_DIMEN_BASE,
+                        lineHeight = LINE_HEIGHT_BASE,
+                        fontWeight = FontWeight.Medium
+                    )
+                }
+                ButtonXL(onClick = { /*TODO*/ }) {
+                    Text(
+                        text = "Extra Large",
+                        style = MaterialTheme.typography.button
+                    )
+                }
             }
+
             Spacer(modifier = Modifier.height(5.dp))
             ButtonDefault(
                 onClick = { /*TODO*/ },
@@ -132,6 +217,32 @@ class MainActivity : ComponentActivity() {
                 )
             }
             Spacer(modifier = Modifier.height(5.dp))
+            ButtonDefault(
+                onClick = { /*TODO*/ },
+                shape = RoundedCornerShape(BORDER_RADIUS_LG),
+                contentPadding = PaddingValues(
+                    start = DIMEN_FIVE.dp,
+                    top = DIMEN_TWO_POINT_FIVE.dp,
+                    bottom = DIMEN_TWO_POINT_FIVE.dp,
+                    end = DIMEN_FOUR.dp
+                )
+            ) {
+                Text(
+                    text = "Choose Plan",
+                    fontSize = FONT_DIMEN_SM,
+                    lineHeight = LINE_HEIGHT_SM,
+                    fontWeight = FontWeight.Medium,
+                    modifier = Modifier.padding(end = DIMEN_TWO.dp)
+                )
+                Icon(
+                    imageVector = Icons.Filled.ArrowForward,
+                    contentDescription = "Shopping Cart",
+                    modifier = Modifier
+                        .height(DIMEN_FIVE.dp)
+                        .width(DIMEN_FIVE.dp)
+                )
+            }
+            Spacer(modifier = Modifier.height(5.dp))
             ButtonOutline(onClick = { /*TODO*/ }) {
                 Text(
                     text = "Outline",
@@ -139,6 +250,10 @@ class MainActivity : ComponentActivity() {
                     lineHeight = LINE_HEIGHT_SM,
                     fontWeight = FontWeight.Medium
                 )
+            }
+            Spacer(modifier = Modifier.height(5.dp))
+            Button(onClick = {}) {
+                Text(text = "Hello Button")
             }
         }
     }

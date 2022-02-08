@@ -1,8 +1,5 @@
 package com.example.composeuicomponents.ui.theme.dimensions
 
-import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
-
 private const val DIMEN_0 = 0 * 16                // 0
 private const val DIMEN_2 = 0.125 * 16            // 0.5
 private const val DIMEN_4 = 0.25 * 16             // 1
@@ -77,12 +74,3 @@ const val DIMEN_SIXTY_FOUR = DIMEN_256
 const val DIMEN_SEVENTY_TWO = DIMEN_288
 const val DIMEN_EIGHTY = DIMEN_320
 const val DIMEN_NINETY_SIX = DIMEN_384
-
-val DIMEN_NONE: Dp = DIMEN_0.dp
-val DIMEN_SM: Dp = DIMEN_2.dp
-val DIMEN_DEFAULT: Dp = DIMEN_4.dp
-val DIMEN_MD: Dp = DIMEN_6.dp
-val DIMEN_LG: Dp = DIMEN_8.dp
-val DIMEN_XL: Dp = DIMEN_12.dp
-val DIMEN_2XL: Dp = DIMEN_16.dp
-val DIMEN_3XL: Dp = DIMEN_24.dp

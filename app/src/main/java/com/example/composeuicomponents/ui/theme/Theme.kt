@@ -5,9 +5,12 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
 import com.example.composeuicomponents.ui.theme.colorPalettes.BLUE_700
+import com.example.composeuicomponents.ui.theme.spacing.LocalSpacing
+import com.example.composeuicomponents.ui.theme.spacing.Spacing
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
@@ -74,10 +77,14 @@ fun ComposeUIComponentsTheme(
         )
     }
 
-    MaterialTheme(
-        colors = colors,
-        typography = Typography,
-        shapes = Shapes,
-        content = content
-    )
+    /*ADD COMPOSITIONS HERE USING THE PROVIDER*/
+    CompositionLocalProvider(LocalSpacing provides Spacing()) {
+        MaterialTheme(
+            colors = colors,
+            typography = Typography,
+            shapes = Shapes,
+            content = content
+        )
+    }
+
 }
