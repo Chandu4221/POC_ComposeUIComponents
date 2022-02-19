@@ -3,25 +3,22 @@ package com.example.composeuicomponents.ui.components.buttons
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.RowScope
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
 import com.example.composeuicomponents.ui.theme.colorPalettes.WHITE
-import com.example.composeuicomponents.ui.theme.dimensions.BORDER_RADIUS_LG
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_1
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_FIVE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_SIX
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_THREE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_THREE_POINT_FIVE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_TWO
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_TWO_POINT_FIVE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_ZERO
+import com.example.composeuicomponents.ui.theme.dimensions.FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.ONE_DP
+import com.example.composeuicomponents.ui.theme.dimensions.SIX
+import com.example.composeuicomponents.ui.theme.dimensions.THREE
+import com.example.composeuicomponents.ui.theme.dimensions.THREE_POINT_FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.TWO
+import com.example.composeuicomponents.ui.theme.dimensions.TWO_POINT_FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.ZERO
 
 
 /* == SIZES ==*/
@@ -30,8 +27,8 @@ fun ButtonXS(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
-    border: BorderStroke? = BorderStroke(DIMEN_ZERO.dp, MaterialTheme.colors.primary),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+    border: BorderStroke? = BorderStroke(ZERO.dp, MaterialTheme.colors.primary),
     backgroundColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.onPrimary,
     content: @Composable RowScope.() -> Unit
@@ -40,13 +37,13 @@ fun ButtonXS(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
+//        shape = shape,
         border = border,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = backgroundColor,
             contentColor = contentColor
         ),
-        contentPadding = PaddingValues(DIMEN_THREE.dp, DIMEN_TWO.dp),
+        contentPadding = PaddingValues(THREE.dp, TWO.dp),
         content = content
     )
 }
@@ -56,8 +53,8 @@ fun ButtonSM(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
-    border: BorderStroke? = BorderStroke(DIMEN_ZERO.dp, MaterialTheme.colors.primary),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+    border: BorderStroke? = BorderStroke(ZERO.dp, MaterialTheme.colors.primary),
     backgroundColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.onPrimary,
     content: @Composable RowScope.() -> Unit
@@ -66,13 +63,13 @@ fun ButtonSM(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
+//        shape = shape,
         border = border,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = backgroundColor,
             contentColor = contentColor
         ),
-        contentPadding = PaddingValues(DIMEN_THREE.dp, DIMEN_TWO.dp),
+        contentPadding = PaddingValues(THREE.dp, TWO.dp),
         content = content
     )
 }
@@ -82,18 +79,18 @@ fun ButtonDefault(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
-    border: BorderStroke? = BorderStroke(DIMEN_ZERO.dp, MaterialTheme.colors.primary),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+    border: BorderStroke? = BorderStroke(ZERO.dp, MaterialTheme.colors.primary),
     backgroundColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.onPrimary,
-    contentPadding: PaddingValues = PaddingValues(DIMEN_FIVE.dp, DIMEN_TWO_POINT_FIVE.dp),
+    contentPadding: PaddingValues = PaddingValues(FIVE.dp, TWO_POINT_FIVE.dp),
     content: @Composable RowScope.() -> Unit
 ) {
     Button(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
+//        shape = shape,
         border = border,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = backgroundColor,
@@ -109,8 +106,8 @@ fun ButtonLG(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
-    border: BorderStroke? = BorderStroke(DIMEN_ZERO.dp, MaterialTheme.colors.primary),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+    border: BorderStroke? = BorderStroke(ZERO.dp, MaterialTheme.colors.primary),
     backgroundColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.onPrimary,
     content: @Composable RowScope.() -> Unit
@@ -119,13 +116,13 @@ fun ButtonLG(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
+//        shape = shape,
         border = border,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = backgroundColor,
             contentColor = contentColor
         ),
-        contentPadding = PaddingValues(DIMEN_FIVE.dp, DIMEN_THREE.dp),
+        contentPadding = PaddingValues(FIVE.dp, THREE.dp),
         content = content
     )
 }
@@ -136,8 +133,8 @@ fun ButtonXL(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
-    border: BorderStroke? = BorderStroke(DIMEN_ZERO.dp, MaterialTheme.colors.primary),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+    border: BorderStroke? = BorderStroke(ZERO.dp, MaterialTheme.colors.primary),
     backgroundColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.onPrimary,
     content: @Composable RowScope.() -> Unit
@@ -146,13 +143,13 @@ fun ButtonXL(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
+//        shape = shape,
         border = border,
         colors = ButtonDefaults.buttonColors(
             backgroundColor = backgroundColor,
             contentColor = contentColor
         ),
-        contentPadding = PaddingValues(DIMEN_SIX.dp, DIMEN_THREE_POINT_FIVE.dp),
+        contentPadding = PaddingValues(SIX.dp, THREE_POINT_FIVE.dp),
         content = content
     )
 }
@@ -163,7 +160,7 @@ fun ButtonOutline(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
-    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
+//    shape: Shape = RoundedCornerShape(BORDER_RADIUS_LG),
     borderColor: Color = MaterialTheme.colors.primary,
     contentColor: Color = MaterialTheme.colors.primary,
     content: @Composable RowScope.() -> Unit
@@ -172,13 +169,13 @@ fun ButtonOutline(
         onClick = onClick,
         modifier = modifier,
         enabled = enabled,
-        shape = shape,
-        border = BorderStroke(DIMEN_1.dp, borderColor),
+//        shape = shape,
+        border = BorderStroke(ONE_DP.dp, borderColor),
         colors = ButtonDefaults.buttonColors(
             backgroundColor = WHITE,
             contentColor = contentColor
         ),
-        contentPadding = PaddingValues(DIMEN_THREE.dp, DIMEN_TWO.dp),
+        contentPadding = PaddingValues(THREE.dp, TWO.dp),
         content = content
     )
 }

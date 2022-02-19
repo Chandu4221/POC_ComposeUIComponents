@@ -6,24 +6,24 @@ import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_FOUR
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_ONE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_ONE_POINT_FIVE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_SIX
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_THREE
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_TWO
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_ZERO
-import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_ZERO_POINT_FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.FOUR
+import com.example.composeuicomponents.ui.theme.dimensions.ONE
+import com.example.composeuicomponents.ui.theme.dimensions.ONE_POINT_FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.SIX
+import com.example.composeuicomponents.ui.theme.dimensions.THREE
+import com.example.composeuicomponents.ui.theme.dimensions.TWO
+import com.example.composeuicomponents.ui.theme.dimensions.ZERO
+import com.example.composeuicomponents.ui.theme.dimensions.ZERO_POINT_FIVE
 
 data class Spacing(
-    val none: Dp = DIMEN_ZERO.dp,
-    val sm: Dp = DIMEN_ZERO_POINT_FIVE.dp,
-    val default: Dp = DIMEN_ONE.dp,
-    val md: Dp = DIMEN_ONE_POINT_FIVE.dp,
-    val lg: Dp = DIMEN_TWO.dp,
-    val xl: Dp = DIMEN_THREE.dp,
-    val xxl: Dp = DIMEN_FOUR.dp,
-    val xxxl: Dp = DIMEN_SIX.dp
+    val none: Dp = ZERO.dp,
+    val sm: Dp = ZERO_POINT_FIVE.dp,
+    val default: Dp = ONE.dp,
+    val md: Dp = ONE_POINT_FIVE.dp,
+    val lg: Dp = TWO.dp,
+    val xl: Dp = THREE.dp,
+    val xxl: Dp = FOUR.dp,
+    val xxxl: Dp = SIX.dp
 )
 
 val LocalSpacing = compositionLocalOf { Spacing() }
