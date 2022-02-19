@@ -1,6 +1,21 @@
-package com.example.composeuicomponents.ui.theme.dimensions
+package com.example.composeuicomponents.ui.theme.fonts
 
 import androidx.compose.ui.unit.sp
+import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_60
+import com.example.composeuicomponents.ui.theme.dimensions.DIMEN_72
+import com.example.composeuicomponents.ui.theme.dimensions.EIGHT
+import com.example.composeuicomponents.ui.theme.dimensions.FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.FOUR
+import com.example.composeuicomponents.ui.theme.dimensions.NINE
+import com.example.composeuicomponents.ui.theme.dimensions.SEVEN
+import com.example.composeuicomponents.ui.theme.dimensions.SIX
+import com.example.composeuicomponents.ui.theme.dimensions.TEN
+import com.example.composeuicomponents.ui.theme.dimensions.THIRTY
+import com.example.composeuicomponents.ui.theme.dimensions.THIRTY_TWO
+import com.example.composeuicomponents.ui.theme.dimensions.THREE
+import com.example.composeuicomponents.ui.theme.dimensions.THREE_POINT_FIVE
+import com.example.composeuicomponents.ui.theme.dimensions.TWELVE
+import com.example.composeuicomponents.ui.theme.dimensions.TWENTY_FOUR
 
 
 // USE FONT SIZE AND LINE HEIGHT WITH COMBINATION
