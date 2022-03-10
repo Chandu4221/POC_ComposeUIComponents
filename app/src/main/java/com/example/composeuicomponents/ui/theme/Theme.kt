@@ -30,21 +30,6 @@ private val DarkColorPalette = darkColors(
     onError = Color.Black
 )
 
-//private val LightColorPalette = lightColors(
-//    primary = PARTNER_PRIMARY_500,
-//    primaryVariant = PARTNER_PRIMARY_700,
-//    secondary = STONE_500,
-//    secondaryVariant = STONE_700,
-//    background = Color.White,
-//    surface = Color.White,
-//    error = RED_300,
-//    onPrimary = WHITE,
-//    onSecondary = SLATE_50,
-//    onBackground = SLATE_900,
-//    onSurface = SLATE_900,
-//    onError = RED_600
-//)
-
 private val LightColorPalette = lightColors(
     primary = BLUE_700,
     primaryVariant = Color(0xFF3700B3),
