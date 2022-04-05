@@ -11,8 +11,6 @@ import androidx.compose.ui.graphics.Color
 import com.example.composeuicomponents.ui.theme.colorPalettes.BLUE_700
 import com.example.composeuicomponents.ui.theme.padding.LocalPadding
 import com.example.composeuicomponents.ui.theme.padding.P
-import com.example.composeuicomponents.ui.theme.spacing.LocalSpacing
-import com.example.composeuicomponents.ui.theme.spacing.Spacing
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val DarkColorPalette = darkColors(
@@ -59,13 +57,21 @@ fun ComposeUIComponentsTheme(
     val systemUiController = rememberSystemUiController()
     SideEffect {
         systemUiController.setSystemBarsColor(
-            LightColorPalette.primary,
-            darkIcons = false
+            color = Color(0xffEE5355),
+            darkIcons = true
+        )
+        systemUiController.setNavigationBarColor(
+            color = Color(0xffEE5355),
+            darkIcons = true
+        )
+        systemUiController.setStatusBarColor(
+            color = Color(0xffEE5355),
+            darkIcons = true
         )
     }
 
     /*ADD COMPOSITIONS HERE USING THE PROVIDER*/
-    CompositionLocalProvider(LocalSpacing provides Spacing(), LocalPadding provides P()) {
+    CompositionLocalProvider(LocalPadding provides P()) {
         MaterialTheme(
             colors = colors,
             typography = Typography,

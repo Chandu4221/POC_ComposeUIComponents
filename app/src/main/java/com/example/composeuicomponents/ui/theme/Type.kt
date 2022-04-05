@@ -17,6 +17,10 @@ val interFontFamily = FontFamily(
     Font(R.font.inter_bold_700, weight = FontWeight.W700)
 )
 
+var carterFontFamily = FontFamily(
+    Font(R.font.carter_one_regular, weight = FontWeight.W400)
+)
+
 val Typography = Typography(
-    defaultFontFamily = interFontFamily,
+    defaultFontFamily = carterFontFamily,
 )
