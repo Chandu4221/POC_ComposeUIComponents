@@ -38,9 +38,11 @@ import androidx.compose.ui.unit.sp
 import androidx.constraintlayout.compose.ConstraintLayout
 import com.example.composeuicomponents.R
 import com.example.composeuicomponents.ui.theme.dimensions.EIGHT
+import com.example.composeuicomponents.ui.theme.dimensions.EIGHTY
 import com.example.composeuicomponents.ui.theme.dimensions.ELEVEN
 import com.example.composeuicomponents.ui.theme.dimensions.FIVE
 import com.example.composeuicomponents.ui.theme.dimensions.FOUR
+import com.example.composeuicomponents.ui.theme.dimensions.SIX
 import com.example.composeuicomponents.ui.theme.dimensions.TWENTY
 import com.example.composeuicomponents.ui.theme.dimensions.TWO
 import com.example.composeuicomponents.ui.theme.dimensions.ZERO
@@ -112,16 +114,16 @@ fun MainContent() {
             Card(
                 backgroundColor = Color(0xffFDE30E),
                 modifier = Modifier
-                    .padding(FIVE.dp)
-                    .fillMaxWidth()
+                    .padding(TWO.dp)
+                    .fillMaxWidth(1f)
                     .constrainAs(yellowBox) {
                         top.linkTo(parent.top)
                         bottom.linkTo(parent.bottom)
-                        start.linkTo(parent.start, margin = -EIGHT.dp)
+                        start.linkTo(parent.start, margin = -FIVE.dp)
                     },
                 shape = RoundedCornerShape(
-                    bottomEnd = TWENTY.dp,
-                    topEnd = TWENTY.dp
+                    bottomEnd = EIGHTY.dp,
+                    topEnd = EIGHTY.dp
                 )
             ) {
                 Column(
@@ -145,7 +147,7 @@ fun MainContent() {
                     )
                     Spacer(modifier = Modifier.height(TWO.dp))
                     Button(
-                        modifier = Modifier.padding(start = TWO.dp),
+                        modifier = Modifier.padding(start = SIX.dp),
                         onClick = { /*TODO*/ },
                         colors = ButtonDefaults.buttonColors(
                             backgroundColor = Color(0xff2B3252)
